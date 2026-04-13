@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn JavaScript || Assignment 01</title>
+  <script>
+    /*
+    Assignment 1
+    You have a set of links on a page, and their positions change randomly.
+    All the links contain different classes.
+    The task is to open the link containing the class "open" and the text inside the link containing "Elzero".
+    Note that the code will be written inside a Script Tag in the `<head>` section.
+    It is recommended to use Class List Object Methods to practice what you have learned.
+    */
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("a").forEach(link => {
+        if (link.classList.contains("open") && link.textContent.includes("Elzero")) {
+          link.click();
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <a class="open" href="https://google.com">Google</a>
+  <a class="open" href="https://elzero.org">Elzero</a>
+  <a class="not" href="https://facebook.com">Facebook</a>
+  <a class="linked" href="https://linkedin.com">Elzero</a>
+
+</body>
+
+</html>
