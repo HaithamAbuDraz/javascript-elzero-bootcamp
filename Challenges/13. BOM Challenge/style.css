@@ -1,0 +1,105 @@
+/* Reset & Global Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Form Section */
+.form {
+  display: flex;
+  gap: 15px;
+  background-color: #eee;
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.form input {
+  border: 2px solid #ddd;
+  padding: 15px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.form input:focus {
+  border-color: #ff5722;
+}
+
+.form .input {
+  flex: 1;
+}
+
+.form .add {
+  color: white;
+  background-color: #ff5722;
+  border: none;
+  cursor: pointer;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.form .add:hover {
+  background-color: #e64a19;
+}
+
+/* Tasks Section */
+.tasks {
+  background-color: #eee;
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  min-height: 15px;
+}
+
+.tasks .task {
+  background-color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.tasks .task:not(:first-child) {
+  margin-top: 15px;
+}
+
+.tasks .task:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tasks .task p {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.tasks .task button {
+  color: white;
+  background-color: #ff5722;
+  border: none;
+  cursor: pointer;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.tasks .task button:hover {
+  background-color: #e64a19;
+}
