@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn JavaScript || Assignment 01</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="controls">
+      <div class="control">
+        <label>FONT</label>
+        <select id="fontSelect">
+          <option value="Open Sans">Open Sans</option>
+          <option value="Cairo">Cairo</option>
+          <option value="Roboto">Roboto</option>
+        </select>
+      </div>
+
+      <div class="control">
+        <label>COLOR</label>
+        <select id="colorSelect">
+          <option value="#2c3e50">Dark Navy</option>
+          <option value="#c0392b">Red</option>
+          <option value="#16a085">Green Teal</option>
+          <option value="#d35400">Orange</option>
+          <option value="#8e44ad">Purple</option>
+          <option value="#2980b9">Blue</option>
+        </select>
+      </div>
+
+      <div class="control">
+        <label>SIZE (px)</label>
+        <select id="sizeSelect">
+          <!-- options 16 to 30 will be added by JS -->
+        </select>
+      </div>
+    </div>
+
+    <div class="preview" id="previewArea">
+      <div class="demo-text">
+        <h2 id="mainHeading">Hello! Customize me</h2>
+        <p id="mainParagraph">This text changes based on your choices. Select a font, pick a color, and adjust the size.
+          Your settings are saved automatically and will be here when you come back.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
