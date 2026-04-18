@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn JavaScript || Assignment 02</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="form-box">
+    <!-- Input field 1: text -->
+    <div class="field">
+      <label>Your Name</label>
+      <input type="text" id="nameInput" placeholder="Enter your name">
+    </div>
+
+    <!-- Input field 2: number -->
+    <div class="field">
+      <label>Age</label>
+      <input type="number" id="ageInput" placeholder="Enter your age" min="1" max="120">
+    </div>
+
+    <!-- Input field 3: email -->
+    <div class="field">
+      <label>Email</label>
+      <input type="email" id="emailInput" placeholder="Enter your email">
+    </div>
+
+    <!-- Select box with 5 options -->
+    <div class="field">
+      <label>Favorite Category</label>
+      <select id="categorySelect">
+        <option value="technology">Technology</option>
+        <option value="music">Music</option>
+        <option value="sports">Sports</option>
+        <option value="art">Art</option>
+        <option value="travel">Travel</option>
+      </select>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
