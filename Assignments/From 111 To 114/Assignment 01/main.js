@@ -12,18 +12,18 @@ If the user closes the page or refreshes, the previously selected option should 
 */
 
 // Get all the select elements
-const fontSelect = document.getElementById('fontSelect');
-const colorSelect = document.getElementById('colorSelect');
-const sizeSelect = document.getElementById('sizeSelect');
+let fontSelect = document.getElementById('fontSelect');
+let colorSelect = document.getElementById('colorSelect');
+let sizeSelect = document.getElementById('sizeSelect');
 
 // Get the preview container (where styles will apply)
-const previewArea = document.getElementById('previewArea');
+let previewArea = document.getElementById('previewArea');
 
 // Function to apply all current styles to the preview area
 function applyStyles() {
-  const selectedFont = fontSelect.value;
-  const selectedColor = colorSelect.value;
-  const selectedSize = sizeSelect.value;
+  let selectedFont = fontSelect.value;
+  let selectedColor = colorSelect.value;
+  let selectedSize = sizeSelect.value;
 
   // Apply font, color, and size to the preview container
   previewArea.style.fontFamily = `'${selectedFont}', sans-serif`;
@@ -33,7 +33,7 @@ function applyStyles() {
 
 // Function to save current settings to localStorage
 function saveToLocalStorage() {
-  const settings = {
+  let settings = {
     font: fontSelect.value,
     color: colorSelect.value,
     size: sizeSelect.value
@@ -43,10 +43,10 @@ function saveToLocalStorage() {
 
 // Function to load settings from localStorage and apply them
 function loadSettings() {
-  const saved = localStorage.getItem('fontSettings');
+  let saved = localStorage.getItem('fontSettings');
 
   if (saved) {
-    const settings = JSON.parse(saved);
+    let settings = JSON.parse(saved);
 
     // Set select values if they exist
     if (settings.font) fontSelect.value = settings.font;
@@ -70,7 +70,7 @@ function handleChange() {
 // Populate size select with values 16 to 30
 function populateSizeOptions() {
   for (let size = 16; size <= 30; size++) {
-    const option = document.createElement('option');
+    let option = document.createElement('option');
     option.value = size;
     option.textContent = size + 'px';
     sizeSelect.appendChild(option);
