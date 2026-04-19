@@ -36,7 +36,11 @@ const {
   },
 } = game;
 
+<<<<<<< HEAD
 const [o, a,] = Object.keys(game.releases);
+=======
+let [o, a,] = Object.keys(game.releases);
+>>>>>>> 57fbbfb6716ecced877339ac995d807d871bf14b
 
 console.log(`My Favourite Games Style Is ${t} Style`);
 // My Favourite Games Style Is YS Style
