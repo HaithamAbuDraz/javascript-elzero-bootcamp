@@ -23,7 +23,7 @@ let myUniqueData = new Set();
 myUniqueData.add(1).add(1).add(1);
 myUniqueData.add(2).add(3).add("A");
 
-console.log(`${myUniqueData.has("a".toUpperCase())}`); // true
+console.log(`Is Set Has => A ${myUniqueData.has("a".toUpperCase())}`); // Is Set Has => A true
 
 console.log(myData); // [1, 1, 1, 2, 3, "A"]
 console.log(myUniqueData); // Set(3) {1, 2, 3, "A"}
