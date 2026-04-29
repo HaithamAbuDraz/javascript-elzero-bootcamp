@@ -1,0 +1,58 @@
+/*
+Assignment 02
+Make an AJAX call to access the previously mentioned JSON object.
+Verify that the request was successful and that the response data is present.
+Print the response in the console to confirm that everything is working correctly.
+Use the available events to print a "Data Loaded" message after the response has finished.
+*/
+
+const request = new XMLHttpRequest();
+request.open("GET", "./articles.json", true);
+request.send();
+request.onreadystatechange = function () {
+  if (this.status == 200 && this.readyState == 4) {
+    console.log(this.responseText);
+    console.log("Data Loaded");
+  }
+};
+/*
+[
+  {
+    "id": 1,
+    "author": "Sarah Johnson",
+    "section": "Technology",
+    "title": "The Rise of Artificial Intelligence in Modern Computing",
+    "content": "Artificial intelligence has transformed the way we interact with computers. From voice assistants to autonomous vehicles, AI is reshaping industries worldwide. This article explores the latest developments in machine learning and neural networks, highlighting how these technologies are becoming increasingly integrated into our daily lives."
+  },
+  {
+    "id": 2,
+    "author": "Michael Chen",
+    "section": "Health & Wellness",
+    "title": "Understanding the Benefits of Mindful Meditation",
+    "content": "Recent studies have shown that regular meditation practice can reduce stress, improve focus, and enhance overall well-being. This comprehensive guide provides beginners with practical techniques to start their mindfulness journey. Learn how just 10 minutes of daily meditation can positively impact your mental health."
+  },
+  {
+    "id": 3,
+    "author": "Emma Rodriguez",
+    "section": "Environment",
+    "title": "Climate Change: Small Actions, Big Impact",
+    "content": "While climate change remains a global challenge, individual actions collectively make a significant difference. This article discusses practical steps everyone can take to reduce their carbon footprint, from reducing plastic usage to supporting sustainable products. Discover how communities are coming together to protect our planet for future generations."
+  },
+  {
+    "id": 4,
+    "author": "David Kim",
+    "section": "Business",
+    "title": "Remote Work: The Future of Corporate Culture",
+    "content": "The pandemic accelerated the shift toward remote work, and many companies are now embracing hybrid models permanently. This article examines the benefits and challenges of distributed teams, including productivity metrics, employee satisfaction, and technological solutions that make remote collaboration seamless and effective."
+  },
+  {
+    "id": 5,
+    "author": "Lisa Thompson",
+    "section": "Education",
+    "title": "Digital Literacy Skills Every Student Needs",
+    "content": "In an increasingly connected world, digital literacy has become as essential as reading and writing. This article outlines the key technological competencies students should develop, including online research skills, data privacy awareness, and effective communication through digital platforms. Prepare the next generation for success in the digital age."
+  }
+]
+
+Data Loaded
+*/
