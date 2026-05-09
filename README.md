@@ -20,26 +20,21 @@ This repository serves as my personal journey through the **JavaScript Bootcamp*
 **Why this repository exists:**
 - 📌 **Track my progress** – A structured log of my learning journey from beginner to advanced.
 - 📌 **Help others** – A reference for fellow students who might get stuck or need alternative explanations.
-- 📌 **Build a portfolio** – Demonstrate practical JavaScript skills to potential employers or collaborators.
 
 **Repository structure:**
-Each folder corresponds to a specific lesson or module, named clearly (e.g., `6. Variables Introduction/`). Inside, you'll typically find:
+Each folder corresponds to a specific lesson or module, named clearly (e.g., `112. Local Storage Color App Practice /`). Inside, you'll typically find:
 
 <pre>
-📁 6. Variables Introduction/
+📁 112. Local Storage Color App Practice/
 ├── 📄 index.html
 ├── 📄 main.js
 └── 🎨 style.css (if needed)
 </pre>
 
 **Common files you'll see:**
-- `index.html` – The structure (for DOM-related lessons)
+- `index.html` – The structure lessons
 - `main.js` – Main JavaScript code for the lesson
 - `style.css` – Styling for visual assignments and projects (may be included only when necessary)
-- `assignment-*.js` – Individual assignment solutions (if separated)
-- `challenge.js` – Challenge or problem-solving tasks
-
-> 💡 **Note:** Some pure logic lessons may not include `index.html` or `style.css` – only JavaScript files. The `style.css` file is added only for lessons involving DOM manipulation and visual styling.
 
 **Who is this for?**
 - Students currently taking the Elzero JavaScript Bootcamp
@@ -68,14 +63,14 @@ Each folder corresponds to a specific lesson or module, named clearly (e.g., `6.
 | DOM (Document Object Model) Part 2 | 🟢 Completed |
 | BOM (Browser Object Model) | 🟢 Completed |
 | Local Storage | 🟢 Completed |
-| Destructuring | 🟡 In Progress |
-| Map And Set | 🟡 In Progress |
-| Regular Expression | 🟡 In Progress |
-| Object Oriented Programming | 🟡 In Progress |
-| Date, Generators, Modules | 🟡 In Progress |
-| AJAX And JSON | 🟡 In Progress |
-| Promises | 🟡 In Progress |
-| Final Projects | 🟡 In Progress |
+| Destructuring | 🟢 Completed |
+| Map And Set | 🟢 Completed |
+| Regular Expression | 🟢 Completed |
+| Object Oriented Programming | 🟢 Completed |
+| Date, Generators, Modules | 🟢 Completed |
+| AJAX And JSON | 🟢 Completed |
+| Promises | 🟢 Completed |
+| The End And Advices | 🟢 Completed |
 
 ---
 
@@ -90,7 +85,7 @@ Each folder corresponds to a specific lesson or module, named clearly (e.g., `6.
 ## 💻 How to Use
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/HaithamAbuDraz/javascript-elzero-bootcamp.git](https://github.com/HaithamAbuDraz/javascript-elzero-bootcamp.git)
+   git clone https://github.com/HaithamAbuDraz/Azkari.git
 2. Navigate to a specific lesson:
 Browse through the folders to find the specific assignment or challenge solution you are looking for.
 
